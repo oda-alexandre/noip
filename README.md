@@ -66,6 +66,7 @@ Pour verifier le status vous pouvez copier/coller dans un terminal
 noip2 -S
 ```
 
+
 Pour modifier le temps de syncronisation vous pouvez copier/coller dans un terminal (remplacez le `1` par le temps en minute entre chaque syncronisation)
 
 ```
