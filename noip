@@ -3,8 +3,8 @@
 ###
 # Maintainer:  https://www.oda-alexandre.com/
 # Nom:         noip2
-# Description: deamon pour noip
-# Prerequis:   noip
+# Description: deamon for noip
+# PREREQUISITES:   noip
 # Tutoriel:    https://www.youtube.com/channel/UCELtTOkvfaLoZzUWZ6zywJQ
 ###
 
@@ -16,19 +16,19 @@ test -x $DAEMON || exit 0
 case "$1" in
 
     start)
-    echo -n "Démarrage de la mise à jour d'adresse dynamique: "
+    echo -n "start-up of the mise à jour d'address dynamique: "
     start-stop-daemon --start --exec $DAEMON
     echo "noip2."
     ;;
 
     stop)
-    echo -n "Arrêt de la mise à jour d'adresse dynamique:"
+    echo -n "Arrêt of the mise à jour d'address dynamique:"
     start-stop-daemon --stop --oknodo --retry 30 --exec $DAEMON
     echo "noip2."
     ;;
 
     restart)
-    echo -n "Redémarrage de la mise à jour d'adresse dynamique: "
+    echo -n "Restart-up of the mise à jour d'address dynamique: "
     start-stop-daemon --stop --oknodo --retry 30 --exec $DAEMON
     start-stop-daemon --start --exec $DAEMON
     echo "noip2."

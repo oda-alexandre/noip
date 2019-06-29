@@ -6,25 +6,25 @@
 ## INDEX
 
 - [Introduction](#INTRODUCTION)
-- [Prerequis](#PREREQUIS)
-- [Installation](#INSTALLATION)
-- [Configuration](#CONFIGURATION)
+- [Prerequisites](#PREREQUISITESITES)
+- [Install](#INSTALL)
+- [Configuration](#CONFIG)
 - [License](#LICENSE)
 
 
 ## INTRODUCTION
 
-Ce repository contient un script de syncronisation automatisé de l'IP public avec noip.
+This repository contains an init script sync auto of IP public with noip.
 
 
-## PREREQUIS
+## PREREQUISITES
 
-Avoir un compte sur [Noip](https://www.noip.com/)
+Account [Noip](https://www.noip.com/)
 
 
-## INSTALLATION
+## INSTALL
 
-* Installation de noip
+- Install of noip
 ```
 wget http://www.no-ip.com/client/linux/noip-duc-linux.tar.gz -O ~/noip-duc-linux.tar.gz
 ```
@@ -35,29 +35,29 @@ tar xf ~/noip-duc-linux.tar.gz -C /usr/local/src/
 make install -C /usr/local/src/noip-*/
 ```
 
-* Renseignez comme ceci :
+- Fill in like this :
 
-1 - Entrez votre email noip
-2 - Entrez votre mot de passe noip
-3 - Entrez `y` et renseignez le temps entre chaque syncronisation (default 30min)
-4 - Entrez `y` Appuyez sur entrer
+1 - Enter your email noip
+2 - Enter your password noip
+3 - Enter `y` and fill in the time between each sync (default 30min)
+4 - Enter `y` Push enter
 
-* Téléchargement avec git
+- Download with git
 ```
-git clone https://github.com/oda-alexandre/noip.git ~/noip
+git clone https://gitlab.com/oda-alexandre/noip.git ~/noip
 ```
 
-* Déplacement du script dans le dossier /etc/init.d/
+- Moving the script in the folder /etc/init.d/
 ```
 mv -f ~/noip/noip /etc/init.d/
 ```
 
-* Rendre le script executable
+- Make the script executable
 ```
 chmod +x /etc/init.d/noip
 ```
 
-* Démarrage automatique du script à chaque démarrage
+- Automatic startup of the script
 ```
 update-rc.d -f noip defaults
 ```
@@ -65,7 +65,7 @@ update-rc.d -f noip defaults
 echo "@reboot 	root 	service noip restart" >> /etc/crontab
 ```
 
-* Suppression des résiduts d'installations
+- Removal of the install residues
 ```
 rm -rf ~/noip
 ```
@@ -76,27 +76,27 @@ rm -rf ~/noip-duc-linux.tar.gz
 rm -rf /usr/local/src/noip-duc-linux.tar.gz
 ```
 
-* Démarrage du service à chaque démarrage
+- start-up of service at boot
 ```
 service noip start
 ```
 
-* Mise en place du temps de syncronisation vers noip sur une 1 minute
+- Set up of time of sync to noip on 1 minute
 ```
 noip2 -U 1
 ```
 
 
-## CONFIGURATION
+## CONFIG
 
-Pour verifier le status vous pouvez copier/coller dans un terminal
+To check the status you can copy / paste in a terminal
 
 ```
 noip2 -S
 ```
 
 
-Pour modifier le temps de syncronisation vous pouvez copier/coller dans un terminal (remplacez le `1` par le temps en minute entre chaque syncronisation)
+To change the time of sync you can copy / paste in a terminal (replace the `1` by the time in minute between each sync)
 
 ```
 noip2 -U 1
@@ -105,4 +105,4 @@ noip2 -U 1
 
 ## LICENSE
 
-[![GPLv3+](http://gplv3.fsf.org/gplv3-127x51.png)](https://github.com/oda-alexandre/noip/blob/master/LICENSE)
+[![GPLv3+](http://gplv3.fsf.org/gplv3-127x51.png)](https://gitlab.com/oda-alexandre/noip/blob/master/LICENSE)
