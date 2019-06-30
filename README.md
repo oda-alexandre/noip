@@ -1,7 +1,6 @@
 # NOIP
 
-![noip](https://raw.githubusercontent.com/oda-alexandre/noip/master/img/logo-noip.png)
-
+<img src="https://raw.githubusercontent.com/oda-alexandre/noip/master/img/logo-noip.png" width="200" height="200"/>
 
 ## INDEX
 
