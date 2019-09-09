@@ -10,29 +10,23 @@
 - [Configuration](#CONFIG)
 - [License](#LICENSE)
 
-
 ## INTRODUCTION
 
-This repository contains an init script sync auto of IP public with noip.
-
+This repository contains an init script to sync auto of IP public with noip.
 
 ## PREREQUISITES
 
 Account [Noip](https://www.noip.com/)
 
-
 ## INSTALL
 
 - Install of noip
-```
-wget http://www.no-ip.com/client/linux/noip-duc-linux.tar.gz -O ~/noip-duc-linux.tar.gz
-```
-```
-tar xf ~/noip-duc-linux.tar.gz -C /usr/local/src/
-```
-```
-make install -C /usr/local/src/noip-*/
-```
+
+```wget http://www.no-ip.com/client/linux/noip-duc-linux.tar.gz -O ~/noip-duc-linux.tar.gz```
+
+```tar xf ~/noip-duc-linux.tar.gz -C /usr/local/src/```
+
+```make install -C /usr/local/src/noip-*/```
 
 - Fill in like this :
 
@@ -42,65 +36,48 @@ make install -C /usr/local/src/noip-*/
 4 - Enter `y` Push enter
 
 - Download with git
-```
-git clone https://gitlab.com/oda-alexandre/noip.git ~/noip
-```
+
+```git clone https://gitlab.com/oda-alexandre/noip.git ~/noip```
 
 - Moving the script in the folder /etc/init.d/
-```
-mv -f ~/noip/noip /etc/init.d/
-```
+
+```mv -f ~/noip/noip /etc/init.d/```
 
 - Make the script executable
-```
-chmod +x /etc/init.d/noip
-```
+
+```chmod +x /etc/init.d/noip```
 
 - Automatic startup of the script
-```
-update-rc.d -f noip defaults
-```
-```
-echo "@reboot 	root 	service noip restart" >> /etc/crontab
-```
+
+```update-rc.d -f noip defaults```
+
+```echo "@reboot     root     service noip restart" >> /etc/crontab```
 
 - Removal of the install residues
-```
-rm -rf ~/noip
-```
-```
-rm -rf ~/noip-duc-linux.tar.gz
-```
-```
-rm -rf /usr/local/src/noip-duc-linux.tar.gz
-```
+
+```rm -rf ~/noip```
+
+```rm -rf ~/noip-duc-linux.tar.gz```
+
+```rm -rf /usr/local/src/noip-duc-linux.tar.gz```
 
 - start-up of service at boot
-```
-service noip start
-```
+
+```service noip start```
 
 - Set up of time of sync to noip on 1 minute
-```
-noip2 -U 1
-```
 
+```noip2 -U 1```
 
 ## CONFIG
 
 To check the status you can copy / paste in a terminal
 
-```
-noip2 -S
-```
-
+```noip2 -S```
 
 To change the time of sync you can copy / paste in a terminal (replace the `1` by the time in minute between each sync)
 
-```
-noip2 -U 1
-```
-
+```noip2 -U 1```
 
 ## LICENSE
 

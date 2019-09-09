@@ -1,11 +1,11 @@
 #!/bin/sh
 
 ###
-# Maintainer:  https://www.oda-alexandre.com/
-# Nom:         noip2
-# Description: deamon for noip
-# PREREQUISITES:   noip
-# Tutoriel:    https://www.youtube.com/channel/UCELtTOkvfaLoZzUWZ6zywJQ
+# Maintainer:       https://www.oda-alexandre.com/
+# Nom:              noip2
+# Description:      deamon for noip
+# PREREQUISITES:    noip
+# Tutoriel:         https://www.youtube.com/channel/UCELtTOkvfaLoZzUWZ6zywJQ
 ###
 
 DAEMON=/usr/local/bin/noip2
