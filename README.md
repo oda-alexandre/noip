@@ -12,7 +12,7 @@
 
 ## INTRODUCTION
 
-This repository contains an init script sync auto of IP public with noip.
+This repository contains an init script to sync auto of IP public with noip.
 
 ## PREREQUISITES
 
