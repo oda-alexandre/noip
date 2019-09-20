@@ -31,11 +31,14 @@ Account [Noip](https://www.noip.com/)
 - Fill in like this :
 
 1 - Enter your email noip
+
 2 - Enter your password noip
+
 3 - Enter `y` and fill in the time between each sync (default 30min)
+
 4 - Enter `y` Push enter
 
-- Download with git
+- Download init script with git
 
 ```git clone https://gitlab.com/oda-alexandre/noip.git ~/noip```
 
