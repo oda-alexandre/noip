@@ -26,11 +26,11 @@ WORKDIR /home/${USER}
 
 RUN echo -e '\033[36;1m ******* INSTALL APP ******** \033[0m'; \
 sudo wget http://www.no-ip.com/client/linux/noip-duc-linux.tar.gz -O ~/noip-duc-linux.tar.gz; \
-sudo tar xf ~/noip-duc-linux.tar.gz -C /usr/local/src/; \
-sudo make install -C /usr/local/src/noip-*/
+sudo tar xf ~/noip-duc-linux.tar.gz -C /usr/local/; \
+sudo make install -C /usr/local/noip-*/
 
 RUN echo -e '\033[36;1m ******* ADD INIT SCRIPT ******** \033[0m'
-COPY . ~/noip
+COPY ./noip ~/noip
 
 RUN echo -e '\033[36;1m ******* INSTALL INIT SCRIPT ******** \033[0m'; \
 sudo mv -f ~/noip/noip /etc/init.d/; \
@@ -39,7 +39,7 @@ sudo update-rc.d -f noip defaults; \
 echo "@reboot     root     service noip restart" | sudo tee -a /etc/crontab; \
 rm -rf ~/noip; \
 rm -rf ~/noip-duc-linux.tar.gz; \
-rm -rf /usr/local/src/noip-duc-linux.tar.gz; \
+rm -rf /usr/local/noip-duc-linux.tar.gz; \
 sudo service noip start; \
 sudo noip2 -U 1
 
