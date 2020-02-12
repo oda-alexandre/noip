@@ -1,14 +1,15 @@
 # NOIP
 
-<img src="https://raw.githubusercontent.com/oda-alexandre/noip/master/img/logo-noip.png" width="200" height="200"/>
+<img src="https://assets.gitlab-static.net/uploads/-/system/project/avatar/12904460/noip250px.jpg" width="200" height="200"/>
 
 ## INDEX
 
-- [Introduction](#INTRODUCTION)
-- [Prerequisites](#PREREQUISITESITES)
-- [Install](#INSTALL)
-- [Configuration](#CONFIG)
-- [License](#LICENSE)
+- [NOIP](#noip)
+  - [INDEX](#index)
+  - [INTRODUCTION](#introduction)
+  - [PREREQUISITES](#prerequisites)
+  - [INSTALL](#install)
+  - [LICENSE](#license)
 
 ## INTRODUCTION
 
