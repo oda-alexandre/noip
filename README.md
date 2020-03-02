@@ -1,7 +1,6 @@
 # NOIP
 
-<img src="https://assets.gitlab-static.net/uploads/-/system/project/avatar/12904460/noip250px.jpg" width="200" height="200"/>
-
+![logo](https://assets.gitlab-static.net/uploads/-/system/project/avatar/12904460/noip250px.jpg)
 
 ## INDEX
 
@@ -14,26 +13,21 @@
   - [INSTALL](#install)
   - [LICENSE](#license)
 
-
 ## BADGES
 
 [![pipeline status](https://gitlab.com/oda-alexandre/noip/badges/master/pipeline.svg)](https://gitlab.com/oda-alexandre/noip/commits/master)
-
 
 ## FIRST UPDATE
 
 Date: 01-01-01
 
-
 ## INTRODUCTION
 
 This repository contains an init script to sync auto of IP public with noip.
 
-
 ## PREREQUISITES
 
 Account [Noip](https://www.noip.com/)
-
 
 ## INSTALL
 
@@ -89,7 +83,6 @@ Account [Noip](https://www.noip.com/)
 
 ```noip2 -U 1```
 
-
 ## CONFIG
 
 To check the status you can copy / paste in a terminal
@@ -99,7 +92,6 @@ To check the status you can copy / paste in a terminal
 To change the time of sync you can copy / paste in a terminal (replace the `1` by the time in minute between each sync)
 
 ```noip2 -U 1```
-
 
 ## LICENSE
 
