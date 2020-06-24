@@ -2,8 +2,6 @@
 
 ![logo](https://assets.gitlab-static.net/uploads/-/system/project/avatar/12904460/noip250px.jpg)
 
-## INDEX
-
 - [NOIP](#noip)
   - [INDEX](#index)
   - [BADGES](#badges)
